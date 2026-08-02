@@ -1,10 +1,9 @@
+Hi there, this website is pretty simple to use. The is:
 First page(homepage)
 •	Full screen showing the best images
 •	Tagline
 •	A short brief about the EMPD
-•	Buttons that will navigate to “Enquire Booking” and “View Gallery”
-
-
+•	links that will navigate to “Enquire Booking” and “View Gallery”
 
 About Us page
 •	The journey with Sipho Somela and his biography
