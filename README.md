@@ -46,3 +46,5 @@ User Experience:
 
 •	Social media integration
 •	Clear enquiry 
+
+A new file is then created called style.css. its a file where all my stylings are coded. 
