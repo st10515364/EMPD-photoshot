@@ -4,121 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>EMPD</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>EMPD Photograph
-    </h1>
-    <img src="">
-    
-
-    
+ <header class="site-header">
+        <h1 class="logo">EMPD <span>Photography</span></h1>
+        <nav class="main-nav" aria-label="Main navigation">
             <ul>
-                <nav>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                </nav>
-                    
-                   
-                    
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <section>
-                <div>
+        </nav>
+    </header>
+      <main>
 
-                     <p><em>  "Show audience your art, it’s a summary of your own story"</em></p>
-                     <br>
-                      <h2></h2>
-    
-                     <p></p>
-                    <div >
-                        <a href="gallery.html" title="Watch our best work "> View Gallary </a> 
-                    
-                       <br>
-                       <br>
-                       <a href="book.html" title="Book a photoshoot"> Enquire Booking</a>
-
-                     </div>
-            
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tagline"><em>"Show audience your art, it's a summary of your own story"</em></p>
+                <h2>Capturing Stories Through Light</h2>
+                <p>Pretoria-based photography studio specialising in commercial, fashion, music &amp; lifestyle.</p>
+                <div class="hero-actions">
+                    <a href="gallery.html" class="btn btn-primary" title="View our best work">View Gallery</a>
+                    <a href="book.html" class="btn btn-outline" title="Book a photoshoot">Enquire Booking</a>
                 </div>
+            </div>
+        </section>
 
+        <section class="projects">
+            <header class="section-head">
+                <h2>Projects</h2>
+                <p>Our recent work</p>
+            </header>
 
-            </section>
-            <section>
-                <h2> Projects</h2>
-                 <p >Our recent work</p>
-                 <br>
-                 <br>
-                    <div>
-                       <h3>Commercial Branding</h3>
-                        <img src="images/brand.jpg" alt="" height="250" width="350">
-                       <p> One of our South African Campaign</p>
-                    
-                    </div>
-                    <br>
-                      <div>
-                        <h3>Fashion Editorial</h3>
-                         <!--image-->
-                         <img src="images/fashon.png" alt="" height="300" width="300">
-                         <p> Fashion </p>
-                      </div>
-                      <br>
-                      <div>
-                        <h3>Music Promotional</h3>
-                        <!--image-->
-                        <img src="" alt="" height="">
-                        
-                          <p>Album Art </p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="commercial photography\james-lewis-P-IdYiiIrRA-unsplash.jpg" alt="Commercial branding campaign" width="350" height="250">
+                    <h3>Commercial Branding</h3>
+                    <p>One of our South African Campaigns.</p>
+                </article>
 
-                      </div>
-                      <br>
-                      <div>
-                        <h3>Urban Lifestyle</h3>
-                        <!--image-->
-                        <img src="images/lifestyle.png" alt="" height="300" width="400">
-                        <p>Pretoria Street</p>
-                      </div>
+                <article class="project-card">
+                    <img src="fashion\dominik-kielbasa-ssnCzNayHC4-unsplash.jpg" alt="Fashion editorial shoot" width="300" height="300">
+                    <h3>Fashion Editorial</h3>
+                    <p>Contemporary urban fashion stories.</p>
+                </article>
 
-                
+                <article class="project-card">
+                    <img src="street life\sanberk-kucukkelepce-amgQwclxYDE-unsplash.jpg" alt="Music promotional artwork" width="350" height="250">
+                    <h3>Music Promotional</h3>
+                    <p>Album artwork &amp; press kits.</p>
+                </article>
 
+                <article class="project-card">
+                    <img src="street life\tudor-baciu-b2u9dUSGom0-unsplash.jpg" alt="Urban lifestyle photography" width="400" height="300">
+                    <h3>Urban Lifestyle</h3>
+                    <p>Pretoria street scenes.</p>
+                </article>
+            </div>
+        </section>
 
+        <section class="info-strip">
+            <div class="info-card">
+                <h3>Location</h3>
+                <p><dfn title="Gauteng Pretoria">Pirara</dfn>, Pretoria</p>
+                <a href="contact.html" class="text-link">Find Us →</a>
+            </div>
+            <div class="info-card">
+                <h3>Specialties</h3>
+                <p>Commercial · Fashion · Music</p>
+                <a href="service.html" class="text-link">View Services →</a>
+            </div>
+        </section>
 
+    </main>
 
-
-
-
-            </section>
-            <br>
-            <br>
-            <section>
-                <div>
-                     <h3>Location</h3>
-                    <p><dfn title="Gauteng Pretoria">Pirara</dfn></p>
-                    <a href="contact.html">Find Us at </a>
-                </div>
-                <br>
-                <div >
-                    <h3>Specialties</h3>
-                    <p>Commercial · Fashion · Music</p>
-                    <a href="service.html">View Services </a>
-                </div>
-
-                 
-            </section>
-            <footer>
-                <h4>
-                    Follow us on
-                </h4>
-                  <ul>
-                    <!--links to social media-->
-
-                   </ul>
-                <p>
-                    &copy; 2026 EMPD Photography. All rights reserved.
-
-                </p>
-            </footer>
-
-
-    
+    <footer class="site-footer">
+        <h4>Follow us on</h4>
+        <ul class="social-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Behance</a></li>
+        </ul>
+        <p>&copy; 2026 EMPD Photography. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
