@@ -387,9 +387,6 @@ section { padding: var(--space-lg) 0; }
 
 .gallery-grid figure:hover img { transform: scale(1.06); }
 
-/* ---------------------------------------------------------
-   12. SERVICES
-   --------------------------------------------------------- */
 .services-intro {
     max-width: 720px;
     margin: 0 auto;
