@@ -3,53 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallary</title>
+    <title>Gallery | EMPD Photography</title>
+    <meta name="description" content="Browse the EMPD Photography gallery: weddings and engagements, family portraits, corporate shoots and personal branding from Pretoria.">
+    <meta name="keywords" content="photography gallery, wedding photos, family portraits, corporate photography, personal branding photos, Pretoria">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body class="dark-page">
+
     <header class="site-header">
-        <h1 class="logo">EMPD <span>Photography</span></h1>
+        <a href="index.html" class="logo">EMPD <span>Photography</span></a>
         <nav class="main-nav" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallery.html" class="active">Gallery</a></li>
                 <li><a href="service.html">Services</a></li>
-                <li><a href="book.html">Book</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-
         <section class="page-hero">
             <h1>Our <span>Gallery</span></h1>
             <p>A curated selection of our recent work.</p>
         </section>
 
-        <section class="gallery-grid">
-            <figure><img src="images/brand.jpg" alt="Brand campaign"></figure>
-            <figure><img src="images/fashon.png" alt="Fashion editorial"></figure>
-            <figure><img src="images/lifestyle.png" alt="Urban lifestyle"></figure>
-            <figure><img src="fashion\yuvraj-singh-EJuqAaXtKDY-unsplash.jpg" alt="Music promo"></figure>
-            <figure><img src="images/kamo.jpeg" alt="Portrait session"></figure>
-            <figure><img src="images/tj.jpg" alt="Studio portrait"></figure>
-            <figure><img src="street life\josh-hild-bSM_jWP5gwc-unsplash.jpg" alt="Studio portrait"></figure>
-            <figure><img src="commercial photography/troy-spoelma-nKAaSDnIYk4-unsplash.jpg" alt="Studio portrait"></figure>
-            <figure><img src="fashion\dom-hill-nimElTcTNyY-unsplash.jpg" alt="Studio portrait"></figure>
-            <figure><img src="street life\optical-chemist-3EpdvGspiDM-unsplash.jpg" alt="Studio portrait"></figure>
-            <figure><img src="street life\tudor-baciu-b2u9dUSGom0-unsplash.jpg" alt="Studio portrait"></figure>
-            <figure><img src="weddings\nathan-dumlao-5BB_atDT4oA-unsplash.jpg" alt="Studio portrait"></figure>
-            <figure><img src="weddings\nathan-dumlao-5BB_atDT4oA-unsplash.jpg" alt="Studio portrait"></figure>
-            <figure><img src="commercial photography\james-lewis-P-IdYiiIrRA-unsplash.jpg" alt="Studio portrait"></figure>
-            <figure><img src="commercial photography\mehmet-ali-turan-eWO40PZhkcg-unsplash.jpg" alt="Studio portrait"></figure>
+        <section class="gallery-tools">
+            <div class="filter-buttons">
+                <button type="button" class="filter-btn active" data-filter="all">All</button>
+                <button type="button" class="filter-btn" data-filter="weddings">Weddings</button>
+                <button type="button" class="filter-btn" data-filter="family">Family</button>
+                <button type="button" class="filter-btn" data-filter="corporate">Corporate</button>
+                <button type="button" class="filter-btn" data-filter="branding">Personal Branding</button>
+            </div>
+            <input type="search" id="gallery-search" placeholder="Search the gallery..." aria-label="Search the gallery">
         </section>
 
+        <section class="gallery-grid">
+            <figure data-category="weddings"><img src="weddings\nathan-dumlao-5BB_atDT4oA-unsplash.jpg" alt="Wedding couple sharing a quiet moment" loading="lazy"></figure>
+            <figure data-category="weddings"><img src="weddings\sandy-millar-YeJWDWeIZho-unsplash.jpg" alt="Wedding rings on a book" loading="lazy"></figure>
+            <figure data-category="weddings"><img src="weddings\jeremy-wong-weddings-464ps_nOflw-unsplash.jpg" alt="Bride and groom holding hands" loading="lazy"></figure>
+            <figure data-category="weddings"><img src="weddings\jakob-owens-mLIurLmSRAY-unsplash.jpg" alt="Wedding couple under veil" loading="lazy"></figure>
+            <figure data-category="weddings"><img src="weddings\drew-coffman-llWjwo200fo-unsplash.jpg" alt="Wedding bouquet and hands" loading="lazy"></figure>
+            
+            <figure data-category="family"><img src="images\lawrence-crayton-cf1cN3ofKUM-unsplash.jpg"  loading="lazy"></figure>
+            <figure data-category="family"><img src="images\dylan-sauerwein-YFItC9nQK7o-unsplash.jpg"  loading="lazy"></figure>
+            <figure data-category="family"><img src="images\ta-focando-LOuffSFpWQI-unsplash.jpg"  loading="lazy"></figure>
+            <figure data-category="family"><img src="images\lawrence-crayton-FWX91ORBR6E-unsplash.jpg"  loading="lazy"></figure>
+         
+
+            <figure data-category="corporate"><img src="commercial photography\aditya-kulkarni-SJF_dJkjWZI-unsplash.jpg"  loading="lazy"></figure>
+            <figure data-category="corporate"><img src="commercial photography\aditya-kulkarni-SJF_dJkjWZI-unsplash.jpg"  loading="lazy"></figure>
+            <figure data-category="corporate"><img src="commercial photography\dylan-calluy-L8NzpixeK5g-unsplash.jpg" loading="lazy"></figure>
+            <figure data-category="corporate"><img src="images/tj.jpg" alt="Professional studio headshot" loading="lazy"></figure>
+            <figure data-category="corporate"><img src="commercial photography\troy-spoelma-nKAaSDnIYk4-unsplash.jpg"  loading="lazy"></figure>
+
+            <figure data-category="branding"><img src="images/kamo.jpeg" alt="Studio portrait session" loading="lazy"></figure>
+            <figure data-category="branding"><img src="fashion/mark-adriane-bO3S03I2Aw8-unsplash.jpg" alt="Fashion portrait in natural light" loading="lazy"></figure>
+            <figure data-category="branding"><img src="fashion\dominik-kielbasa-ssnCzNayHC4-unsplash.jpg" alt="Woman with sunglasses" loading="lazy"></figure>
+            <figure data-category="branding"><img src="fashion\dom-hill-nimElTcTNyY-unsplash.jpg" alt="Woman posing outdoors" loading="lazy"></figure>
+            <figure data-category="branding"><img src="fashion\todd-kent-QG756pvuQZ0-unsplash.jpg" alt="Fashion model" loading="lazy"></figure>
+        </section>
+
+        <p id="no-results" class="no-results" hidden>No images match your search.</p>
     </main>
 
     <footer class="site-footer">
+        <h2>EMPD <span>Photography</span></h2>
+        <h4>Follow us</h4>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            
+        </ul>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
         <p>&copy; 2026 EMPD Photography. All rights reserved.</p>
     </footer>
+
 </body>
 </html>

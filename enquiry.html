@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry | EMPD Photography</title>
+    <meta name="description" content="Send an enquiry to EMPD Photography in Pretoria. Tell us about your wedding, family, corporate or personal branding shoot and we'll get back to you.">
+    <meta name="keywords" content="book a photographer, photography enquiry, Pretoria photographer booking, wedding photographer quote">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">EMPD <span>Photography</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>Enquiry</h1>
+            <p>Tell us about your shoot</p>
+        </section>
+
+        <section class="booking-form-wrap">
+            <form class="booking-form" id="enquiry-form" novalidate>
+                <fieldset>
+                    <legend>Your Details</legend>
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name">
+                    <span class="error" id="name-error"></span>
+
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname">
+                    <span class="error" id="surname-error"></span>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error" id="email-error"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Shoot</legend>
+
+                    <label for="service">Type of shoot</label>
+                    <select id="service" name="service">
+                        <option value="">Please choose...</option>
+                        <option>Weddings &amp; Engagements</option>
+                        <option>Family Portraits</option>
+                        <option>Corporate &amp; Professional</option>
+                        <option>Personal Branding</option>
+                    </select>
+                    <span class="error" id="service-error"></span>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                    <span class="error" id="message-error"></span>
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary">Send Enquiry</button>
+                <p id="form-response" class="form-response" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <h2>EMPD <span>Photography</span></h2>
+        <h4>Follow us</h4>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            
+        </ul>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2026 EMPD Photography. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

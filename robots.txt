@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://empd-photographs.netlify.app
+
+/sitemap.xml

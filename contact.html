@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact | EMPD Photography</title>
+    <meta name="description" content="Contact EMPD Photography in Pretoria by phone or email, send us a message, or read our FAQ about shoot length, payment and delivery.">
+    <meta name="keywords" content="contact photographer, Pretoria photography studio, photography FAQ, book a photoshoot, EMPD contact">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+
     <header class="site-header">
-        <h1 class="logo">EMPD <span>Photography</span></h1>
+        <a href="index.html" class="logo">EMPD <span>Photography</span></a>
         <nav class="main-nav" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="service.html">Services</a></li>
-                <li><a href="book.html">Book</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-
         <section class="page-hero">
             <h1>Contact <span>Us</span></h1>
         </section>
 
         <section class="contact-grid">
-
             <div class="contact-card">
                 <h3>Prefer to chat?</h3>
                 <p>Call us directly: <a href="tel:0832600153" class="text-link">083 260 0153</a></p>
-                <p><a href="mailto:empdStudio@gmail.com?subject=%20Book%20a%20Photoshoot" class="text-link">Contact via email</a></p>
+                <p>Email: <a href="mailto:empdStudio@gmail.com" class="text-link">empdStudio@gmail.com</a></p>
 
                 <h4>We provide</h4>
                 <ul>
@@ -47,57 +49,88 @@
                     <li><a href="service.html" class="text-link">View Our Services</a></li>
                     <li><a href="gallery.html" class="text-link">See Our Best Work</a></li>
                 </ul>
+                
+                <div id="map" style="height: 250px; border-radius: 8px; margin-top: 1rem;"></div>
             </div>
 
-            <div class="faq">
-                <h2>Frequently Asked Questions</h2>
+            <div class="contact-card">
+                <h3>Send us a message</h3>
+                <form class="booking-form" id="contact-form" novalidate>
+                    <label for="c-name">Name</label>
+                    <input type="text" id="c-name" name="name">
+                    <span class="error" id="c-name-error"></span>
 
-                <details open>
-                    <summary>How long does a shoot take?</summary>
-                    <p>Most sessions take 2–4 hours. Commercial shoots take a full day.</p>
-                </details>
+                    <label for="c-email">Email</label>
+                    <input type="email" id="c-email" name="email">
+                    <span class="error" id="c-email-error"></span>
 
-                <details>
-                    <summary>When do I pay?</summary>
-                    <p>A 50% deposit is required to secure your booking. The balance is due on the day of the shoot.</p>
-                </details>
+                    <label for="c-phone">Phone</label>
+                    <input type="tel" id="c-phone" name="phone">
+                    <span class="error" id="c-phone-error"></span>
 
-                <details>
-                    <summary>When will I get my photos?</summary>
-                    <p>You'll receive your edited images within 4–6 business days. Rush delivery is also available.</p>
-                </details>
+                    <label for="c-type">Message type</label>
+                    <select id="c-type" name="type">
+                        <option value="">Please choose...</option>
+                        <option>General question</option>
+                        <option>Booking</option>
+                        <option>Quote request</option>
+                        <option>Feedback</option>
+                    </select>
+                    <span class="error" id="c-type-error"></span>
 
-                <details>
-                    <summary>Where are you based?</summary>
-                    <p>We're in Pretoria. We can also travel to locations across South Africa.</p>
-                </details>
+                    <label for="c-message">Message</label>
+                    <textarea id="c-message" name="message" rows="5"></textarea>
+                    <span class="error" id="c-message-error"></span>
 
-                <details>
-                    <summary>Do you have a studio?</summary>
-                    <p>Yes! We have a fully equipped studio in Pretoria.</p>
-                </details>
+                    <button type="submit" class="btn btn-primary">Send Email</button>
+                </form>
             </div>
-
         </section>
 
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <details open>
+                <summary>How long does a shoot take?</summary>
+                <p>Most sessions take 2–4 hours. Commercial shoots take a full day.</p>
+            </details>
+            <details>
+                <summary>When do I pay?</summary>
+                <p>A 50% deposit is required to secure your booking. The balance is due on the day of the shoot.</p>
+            </details>
+            <details>
+                <summary>When will I get my photos?</summary>
+                <p>You'll receive your edited images within 4–6 business days. Rush delivery is also available.</p>
+            </details>
+            <details>
+                <summary>Where are you based?</summary>
+                <p>We're in Pretoria. We can also travel to locations across South Africa.</p>
+            </details>
+            <details>
+                <summary>Do you have a studio?</summary>
+                <p>Yes! We have a fully equipped studio in Pretoria.</p>
+            </details>
+        </section>
     </main>
 
     <footer class="site-footer">
-        <h4>Prefer to go to?</h4>
+        <h2>EMPD <span>Photography</span></h2>
+        <h4>Follow us</h4>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            
+        </ul>
+        <h4>Quick Links</h4>
         <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="book.html">Book</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         <p>&copy; 2026 EMPD Photography. All rights reserved.</p>
     </footer>
 
-    
-
-
-
-      
-
-    
 </body>
 </html>
